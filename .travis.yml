@@ -2,6 +2,9 @@ language: objective-c
 osx_image: xcode8
 # rvm:
 # - 2.3.1
+cache:
+  directories:
+    - $HOME/UnityEditor
 before_install:
 - "chmod +x ./Scripts/install.sh"
 - "chmod +x ./Scripts/build.sh"
@@ -22,3 +25,6 @@ deploy:
   skip_cleanup: true
   on:
     repo: Novaetra/Breakout-Clone
+env:
+  global:
+    - PROJECT_NAME=Breakout-Clone

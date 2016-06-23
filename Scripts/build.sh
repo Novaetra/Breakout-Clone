@@ -5,9 +5,9 @@
 #   -batchmode \
 #   -nographics \
 #   -silent-crashes \
-#   -logFile $(pwd)/unity.log \
-#   -projectPath $(pwd) \
-#   -buildWindowsPlayer "$(pwd)/Build/windows/$PROJECT_NAME-x86.exe" \
+#   -logFile $TRAVIS_BUILD_DIR/unity.log \
+#   -projectPath $TRAVIS_BUILD_DIR \
+#   -buildWindowsPlayer "$TRAVIS_BUILD_DIR/Build/windows/$PROJECT_NAME-x86.exe" \
 #   -quit
 
 echo "Attempting to build $PROJECT_NAME for Windows (64-bit)"
@@ -15,9 +15,9 @@ echo "Attempting to build $PROJECT_NAME for Windows (64-bit)"
   -batchmode \
   -nographics \
   -silent-crashes \
-  -logFile $(pwd)/unity.log \
-  -projectPath $(pwd) \
-  -buildWindowsPlayer64 "$(pwd)/Build/windows/$PROJECT_NAME-x86_64.exe" \
+  -logFile $TRAVIS_BUILD_DIR/unity.log \
+  -projectPath $TRAVIS_BUILD_DIR \
+  -buildWindowsPlayer64 "$TRAVIS_BUILD_DIR/Build/windows/$PROJECT_NAME-x86_64.exe" \
   -quit
 
 echo "Attempting to build $PROJECT_NAME for OS X"
@@ -25,9 +25,9 @@ echo "Attempting to build $PROJECT_NAME for OS X"
   -batchmode \
   -nographics \
   -silent-crashes \
-  -logFile $(pwd)/unity.log \
-  -projectPath $(pwd) \
-  -buildOSXUniversalPlayer "$(pwd)/Build/osx/$PROJECT_NAME.app" \
+  -logFile $TRAVIS_BUILD_DIR/unity.log \
+  -projectPath $TRAVIS_BUILD_DIR \
+  -buildOSXUniversalPlayer "$TRAVIS_BUILD_DIR/Build/osx/$PROJECT_NAME.app" \
   -quit
 
 echo "Attempting to build $PROJECT_NAME for Linux"
@@ -35,10 +35,10 @@ echo "Attempting to build $PROJECT_NAME for Linux"
   -batchmode \
   -nographics \
   -silent-crashes \
-  -logFile $(pwd)/unity.log \
-  -projectPath $(pwd) \
-  -buildLinuxUniversalPlayer "$(pwd)/Build/linux/$PROJECT_NAME.exe" \
+  -logFile $TRAVIS_BUILD_DIR/unity.log \
+  -projectPath $TRAVIS_BUILD_DIR \
+  -buildLinuxUniversalPlayer "$TRAVIS_BUILD_DIR/Build/linux/$PROJECT_NAME" \
   -quit
 
 echo 'Logs from build'
-cat $(pwd)/unity.log
+cat $TRAVIS_BUILD_DIR/unity.log
