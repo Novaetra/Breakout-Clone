@@ -5,10 +5,15 @@
 downloadUrl="http://netstorage.unity3d.com/unity/960ebf59018a/MacEditorInstaller/Unity-5.3.5f1.pkg"
 file="$HOME/UnityEditor/Unity.pkg"
 
-[ -f $file ] && exit || echo "$file not found!"
+DownloadUnity () { 
+    echo "Downloading from $downloadUrl: "
+    curl -o $file $downloadUrl
+	InstallUnity
+}
 
-echo "Downloading from $downloadUrl: "
-curl -o $file $downloadUrl
+InstallUnity () {
+    echo "Installing $file"
+    sudo installer -dumplog -package $file -target /
+}
 
-echo "Installing $file"
-sudo installer -dumplog -package $file -target /
+[ -f $file ] && InstallUnity || DownloadUnity
