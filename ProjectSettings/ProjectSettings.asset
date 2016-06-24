@@ -55,7 +55,7 @@ PlayerSettings:
   xboxEnableKinect: 0
   xboxEnableKinectAutoTracking: 0
   xboxEnableFitness: 0
-  visibleInBackground: 1
+  visibleInBackground: 0
   allowFullscreenSwitch: 1
   macFullscreenMode: 2
   d3d9FullscreenMode: 1
@@ -96,7 +96,7 @@ PlayerSettings:
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
-  productGUID: dd86cd95fdd76b74883ffa7db20c34e4
+  productGUID: 627d729592f40754e9ebaaea701e9c00
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -335,8 +335,7 @@ PlayerSettings:
   psp2UseDebugIl2cppLibs: 0
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
-  scriptingDefineSymbols:
-    1: 
+  scriptingDefineSymbols: {}
   metroPackageName: Breakout-Clone
   metroPackageVersion: 
   metroCertificatePath: 
