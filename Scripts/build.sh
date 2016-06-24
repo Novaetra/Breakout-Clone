@@ -10,6 +10,8 @@
 #   -buildWindowsPlayer "$TRAVIS_BUILD_DIR/Build/windows/$PROJECT_NAME-x86.exe" \
 #   -quit
 
+mkdir -p $TRAVIS_BUILD_DIR
+
 echo "Attempting to build $PROJECT_NAME for Windows (64-bit)"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -batchmode \
