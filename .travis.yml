@@ -18,7 +18,7 @@ deploy:
     secure: RTeGs05eZeRZAOp/Y00x13+SPe2iOXGDHU5b0pNhBt/6SrRD78WIH0R68I8C4DFPZVXDcv8e+qLmNUrO9lkrO8uFWqB0SWTLEnZbYOVWF72Rs0qWYP95UoJ3SGjBOqWmnkqOamIj02EQDFIm0cl79owDcJ6+SfMOOhxRJyGVPwjpaUQ01zM7/0JCKWm6dnWHKNklEMklTv8iY84jJLAzZ0lIjlXJ7vpbjrWtRjnBI7yyuR6GKjIKpMfrxnhh9xFc5KltbmeM5WxXtLkVBmHqP5NCVbmTOa54xMFOAg+Sc2md28QaTGLvujUtS8zD1gP4dN+OpO51NHIKcxO7l8wUm58IO6WjtJlv76DZZTBf9NOuQ9HM/st1Culg0sYuNp6AqsZpTu8EmRHFKzxOziuT/SCiJsArPLzo+78tqKnapUUWuKhlaDKgw5rwdagduU9F9LO+VGka6v+3LN7lZCcDnaY5mxoTmADyJ9dqSWsQVeskHa7n8egsI7jwvqz9q/guMLy79MGTIi2rQt0eySe1s7NvmlaaujLl91hCkmXhqnIeLWBj2G6VUAmOHpvGho6syQ4+HU6Ti9gF1+Uz5S29xFbURDtc45wkyTA0k7usbTo7xYRHEMzPQ+kAuv1IvgbcZ0gxXMT0JLQ0RKwYwJfaYL6C42DbIB/oOxE4avzl5rM=
   file:
     # - "$TRAVIS_BUILD_DIR/Scripts/Build/windows/Breakout-Clone-x86.exe"
-    - "$TRAVIS_BUILD_DIR/Build/windows/Breakout-Clone-x86_64.exe"
+    - "$TRAVIS_BUILD_DIR/Scripts/Build/windows/Breakout-Clone-x86_64.exe"
     # TODO: Make sure these work
     # - "$TRAVIS_BUILD_DIR/Scripts/Build/osx/Breakout-Clone.app"
     # - "$TRAVIS_BUILD_DIR/Scripts/Build/linux/Breakout-Clone.exe"

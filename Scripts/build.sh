@@ -17,8 +17,11 @@ echo "Attempting to build $PROJECT_NAME for Windows (64-bit)"
   -silent-crashes \
   -logFile $(pwd)/unity-windows64.log \
   -projectPath $(pwd) \
-  -buildWindowsPlayer64 "$UNITY_BUILD_DIR/windows/$PROJECT_NAME-x86_64.exe" \
+  -buildWindowsPlayer64 "$(pwd)/windows/$PROJECT_NAME-x86_64.exe" \
   -quit
+
+echo 'Logs from build'
+cat $(pwd)/unity-windows64.log
 
 echo "Attempting to build $PROJECT_NAME for OS X"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
@@ -42,5 +45,5 @@ echo "Attempting to build $PROJECT_NAME for OS X"
 
 echo 'Logs from build'
 # cat $(pwd)/unity-windows32.log
-cat $(pwd)/unity-windows64.log
+
 cat $(pwd)/unity-osx.log
